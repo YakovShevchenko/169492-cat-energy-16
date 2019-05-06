@@ -1,0 +1,36 @@
+.header__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 0 30px;
+  }
+
+  .header__box {
+    padding: 15px 0px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 55px auto 0 auto;
+    padding: 0 40px;
+    z-index: 1;
+  }
+
+  .header__box {
+    padding: 0;
+    width: 265px;
+  }
+}

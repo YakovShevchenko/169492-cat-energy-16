@@ -1,15 +1,56 @@
 .button--product {
-  .mainButton();
+  .buttonDisplay();
+  .buttonSize();
+  margin: 0 auto;
+
+  .buttonTypography();
   font-size: 16px;
   line-height: 20px;
+
+  background-color: @bg-lightgreen;
 }
 
 .button--banner {
-  .mainButton();
+  .buttonDisplay();
+  .buttonSize();
+  .buttonTypography();
   font-size: 14px;
   line-height: 18px;
+  background-color: @bg-lightgreen;
+  margin: 0 auto;
+
 }
 
 .button--show-more {
-  .mainButton();
+  .buttonDisplay();
+}
+
+@media (min-width: @tablet-width) {
+  .button--toggle {
+    display: none;
+  }
+
+  .button--banner {
+    .buttonDisplay();
+    .buttonSize_tablet();
+    margin-left: 90px;
+
+    .buttonTypography();
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button--toggle {
+    display: none;
+  }
+
+  .button--banner {
+    margin-left: 0;
+
+  .buttonTypography();
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
