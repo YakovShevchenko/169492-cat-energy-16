@@ -1,3 +1,11 @@
 .footer {
   background-color: @bg-lightgrey;
 }
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
