@@ -1,6 +1,7 @@
 .page-header {
   position: relative;
   border-bottom: 1px solid #e6e6e6;
+
   &--preview::after {
     content: "";
     position: absolute;
@@ -15,7 +16,7 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
   .page-header--preview::after {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
@@ -23,8 +24,9 @@
 
 @media (min-width: @tablet-width) {
   .page-header--preview::after {
-    display: none; }
+    display: none;
   }
+}
 
 @media (min-width: @desktop-width) {
   .page-header--preview::after {
@@ -42,7 +44,7 @@
   }
 }
 
-@media (min-width: @desktop-width) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: @desktop-width) and (min-resolution: @retina-dpi), (min-width: @desktop-width) and (min-resolution: @retina-dppx) {
+@media (min-width: @desktop-width) and (min-resolution: @retina-dpi), (min-width: @desktop-width) and (min-resolution: @retina-dppx) {
   .page-header--preview::after {
     background-image: url("../img/index-background-desktop@2x.jpg");
   }

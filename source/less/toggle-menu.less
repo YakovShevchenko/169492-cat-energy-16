@@ -10,6 +10,7 @@
   border: none;
   user-select: none;
   cursor: pointer;
+
   &--no-js {
     display: none;
   }
@@ -29,9 +30,9 @@
   height: 2px;
   font-size: 0;
   color: transparent;
-  background: #111111;
-  -webkit-transition: 0.3s;
+  background-color: #111111;
   transition: 0.3s;
+
   &::after,
   &::before {
     content: "";
@@ -41,14 +42,13 @@
     height: 2px;
     background: #111111;
     transform-origin: 50% 50%;
-    -webkit-transition: 0.3s 0.3s, -webkit-transform 0.3s;
-    transition: 0.3s 0.3s, -webkit-transform 0.3s;
     transition: 0.3s 0.3s, transform 0.3s;
-    transition: 0.3s 0.3s, transform 0.3s, -webkit-transform 0.3s;
   }
+
   &::after {
     top: 7px;
   }
+
   &::before {
     top: -7px;
   }
@@ -56,18 +56,15 @@
 
 .toggle-menu--close span {
   background: transparent;
+
   &::after,
   &::before {
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-            transform: rotate3d(0, 0, 1, 45deg);
-    -webkit-transition: 0.3s, -webkit-transform 0.3s 0.3s;
-    transition: 0.3s, -webkit-transform 0.3s 0.3s;
+    transform: rotate3d(0, 0, 1, 45deg);
     transition: 0.3s, transform 0.3s 0.3s;
-    transition: 0.3s, transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
     top: 0;
   }
+
   &::before {
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-            transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
   }
 }

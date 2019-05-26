@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -25,31 +26,40 @@
   color: @font-color-default;
   font-size: 16px;
   line-height: 18px;
+
   &:hover {
     border: 1px solid #cdcdcd;
   }
+
   &:active,
   &:focus {
     outline: 2px solid #444444;
   }
+
   &:active ~ svg, &:focus ~ svg {
     fill: @bg-lightgreen;
   }
+
   &::-webkit-input-placeholder {
     color: @font-color-default;
   }
+
   &:-ms-input-placeholder {
     color: @font-color-default;
   }
+
   &::-ms-input-placeholder {
     color: @font-color-default;
   }
+
   &::placeholder {
     color: @font-color-default;
   }
+
   &:focus:invalid {
     outline: 2px solid #ff8282;
   }
+
   &:focus:invalid ~ svg {
     fill: #ff8282;
   }

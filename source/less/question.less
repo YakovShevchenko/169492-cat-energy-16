@@ -183,7 +183,6 @@
   width: 100%;
   border: 1px solid #e6e6e6;
   padding: 14px 13px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 151px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -203,18 +202,23 @@
 .question__textarea::-webkit-input-placeholder {
   color: @font-color-default;
 }
+
 .question__textarea:-ms-input-placeholder {
   color: @font-color-default;
 }
+
 .question__textarea::-ms-input-placeholder {
   color: @font-color-default;
 }
+
 .question__textarea::placeholder {
   color: @font-color-default;
 }
+
 .question__textarea:hover {
   border: 1px solid #cdcdcd;
 }
+
 .question__textarea:active,
 .question__textarea:focus {
   border: 1px solid @font-color-default;
