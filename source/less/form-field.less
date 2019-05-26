@@ -19,7 +19,6 @@
   width: 100%;
   border: 1px solid #e6e6e6;
   padding: 13px 15px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
@@ -36,7 +35,8 @@
     outline: 2px solid #444444;
   }
 
-  &:active ~ svg, &:focus ~ svg {
+  &:active ~ svg,
+  &:focus ~ svg {
     fill: @bg-lightgreen;
   }
 
@@ -88,7 +88,6 @@
   font-size: 16px;
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
-  color: #111111;
   flex-shrink: 0;
   margin-right: 15px;
   text-transform: uppercase;
