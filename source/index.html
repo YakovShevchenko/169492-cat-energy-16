@@ -43,6 +43,10 @@
           <h1 class="main-block__title">Функциональное питание для котов</h1>
           <p class="main-block__tagline">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
+
             <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
             <img class="main-block__product" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Продукт">
@@ -53,7 +57,9 @@
           <div class="programs__column">
             <article class="program programs__ident">
               <div class="program__img">
-                <img class="program__icon program__icon--slim" src="img/icon-cat-slim.svg" width="35" height="50" alt="cat">
+                <svg class="program__icon program__icon--slim" width="35" height="50">
+                  <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
+                </svg>
               </div>
               <h3 class="program__title">Похудение</h3>
               <div class="program__text">
@@ -65,7 +71,9 @@
           <div class="programs__column">
             <article class="program programs__ident">
               <div class="program__img">
-                <img class="program__icon program__icon--pro" src="img/icon-cat-pro.svg" width="133" height="100" alt="cat">
+                <svg class="program__icon program__icon--pro" width="69" height="28">
+                  <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
+                </svg>
               </div>
               <h3 class="program__title">Набор массы</h3>
               <div class="program__text">
@@ -121,11 +129,19 @@
               <div class="comparisons">
                 <div class="comparisons__group-pick">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                     <img class="comparisons__img comparisons__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Большой кот">
                   </picture>
                   <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+
                     <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                     <img class="comparisons__img comparisons__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Большой кот">
@@ -167,17 +183,23 @@
             <ul class="social">
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <img class="social__icon social__icon--vk" src="img/icon-vk-mobile.svg" width="22" height="12">
+                  <svg class="social__icon social__icon--vk" width="22" height="12">
+                    <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <img class="social__icon social__icon--insta" src="/img/icon-insta-mobile.svg" width="16" height="16">
+                  <svg class="social__icon social__icon--insta" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item social__item--ident">
                 <a class="social__link" href="#">
-                  <img class="social__icon social__icon--fb" src="img/icon-fb-mobile.svg" width="10" height="19">
+                  <svg class="social__icon social__icon--fb" width="10" height="19">
+                    <use xlink:href="img/sprite.svg#icon-fb-mobile"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -185,12 +207,14 @@
           <div class="page-footer__column">
             <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="developer__name">HTML Academy</span>
-              <img class="developer__icon" src="img/htmlacademy.svg" width="40" height="40">
+              <svg class="developer__icon" width="40" height="40">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              </svg>
             </a>
           </div>
       </div>
     </div>
     </footer>
-    <script src="/js/toggle-nav-script.js"></script>
+    <script src="js/toggle-nav-script.js"></script>
   </body>
 </html>
