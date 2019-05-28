@@ -34,7 +34,7 @@ gulp.task("copy", function () {
 });
 
 gulp.task("css", function () {
-  return gulp.src("source/less/style.less")
+  return gulp.src("source/less/**/*/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
@@ -53,7 +53,7 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("images", function () {
