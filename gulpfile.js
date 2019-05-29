@@ -34,7 +34,7 @@ gulp.task("copy", function () {
 });
 
 gulp.task("css", function () {
-  return gulp.src("source/less/**/*/style.less")
+  return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
