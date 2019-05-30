@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Форма</title>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
@@ -18,10 +17,10 @@
               <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип Cat Energy">
             </picture>
           </a>
-          <button class="toggle-menu">
+          <button class="toggle-menu toggle-menu--no-js">
             <span>Закрыть</span>
           </button>
-          <nav class="navigation">
+          <nav class="navigation navigation--no-js">
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link" href="index.html">Главная</a>
@@ -177,7 +176,7 @@
             <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="developer__name">HTML Academy</span>
               <svg class="developer__icon" width="40" height="40">
-                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
@@ -185,5 +184,8 @@
       </div>
     </footer>
     <script src="js/toggle-nav-script.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </body>
 </html>

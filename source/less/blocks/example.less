@@ -51,7 +51,8 @@
 }
 
 .example__text {
-  margin-bottom: 25px;
+  max-width: 275px;
+  margin-bottom: 23px;
   margin-top: -5px;
   font-family: "Arial", "Tahoma", sans-serif;
 }
@@ -59,6 +60,7 @@
 @media (min-width: @tablet-width) {
   .example__text {
     margin-bottom: 28px;
+    max-width: 700px;
   }
 }
 
@@ -138,6 +140,17 @@
   .example__total {
     max-width: inherit;
     text-align: left;
+  }
+}
+
+.example__total span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__total span {
+    font-size: 20px;
   }
 }
 
