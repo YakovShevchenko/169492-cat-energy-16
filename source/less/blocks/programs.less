@@ -9,6 +9,7 @@
   .programs {
     margin-left: -30px;
     margin-right: -30px;
+    margin-bottom: 5px;
   }
 }
 
@@ -50,8 +51,17 @@
   .programs__ident {
     margin-bottom: 30px;
   }
+  .programs__column:last-child .programs__ident {
+    padding: 78px 315px 58px 52px;
+  }
 }
 
 .programs__column:last-child .programs__ident {
   margin-bottom: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .programs__column:last-child .programs__ident {
+    padding: 80px 55px 58px;
+  }
 }

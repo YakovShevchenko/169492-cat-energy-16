@@ -24,7 +24,6 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**",
     "source/*.ico"
   ], {
@@ -61,7 +60,6 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
 });
@@ -85,6 +83,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
+  "images",
+  "webp",
   "html"
 ));
 

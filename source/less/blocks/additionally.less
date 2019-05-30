@@ -102,9 +102,16 @@
 .additionally__title {
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   margin-top: 0;
   color: #222222;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -120,7 +127,12 @@
   font-family: "Arial", "Tahoma", sans-serif;
 }
 
-@media (min-width: 768px) {
+.additionally__info td {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
   .additionally__info {
     margin-bottom: 19px;
   }

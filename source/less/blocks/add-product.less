@@ -1,5 +1,5 @@
 .add-products {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 @media (min-width: @tablet-width) {
@@ -74,7 +74,7 @@
   align-items: center;
   min-height: 290px;
   width: 100%;
-  padding: 50px 10px;
+  padding: 48px 10px;
   text-align: center;
   color: #ffffff;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -84,7 +84,7 @@
   background-size: cover;
 }
 
-@media (min-resolution: @retina-dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
   .add-products__action {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
@@ -142,6 +142,7 @@
 .add-products__proviso {
   max-width: 150px;
   margin: 0;
+  font-size: 16px;
   line-height: 20px;
   font-family: "Arial", "Tahoma", sans-serif;
 }
